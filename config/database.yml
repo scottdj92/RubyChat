@@ -56,7 +56,6 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
   database: RubyChat_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -79,7 +78,6 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
   database: RubyChat_production
   username: RubyChat
   password: <%= ENV['RUBYCHAT_DATABASE_PASSWORD'] %>
